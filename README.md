@@ -1,5 +1,3 @@
-
-
 # Sekcje
 
 - **Sekcja 1**: Zawiera przycisk (`btn`).
