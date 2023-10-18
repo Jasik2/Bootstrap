@@ -1,1 +1,116 @@
-<!DOCTYPE html> <html lang="pl"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>tytul</title> <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"> </head> <body> <!-- nawigacja bootstrap --> <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top"> <a class="navbar-brand" href="#">Stronka</a> <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button> <div class="collapse navbar-collapse" id="navbarNav"> <ul class="navbar-nav ml-auto"> <li class="nav-item"> <a class="nav-link" href="#sekcja1">Sekcja 1</a> </li> <li class="nav-item"> <a class="nav-link" href="#sekcja2">Sekcja 2</a> </li> <li class="nav-item"> <a class="nav-link" href="#sekcja3">Sekcja 3</a> </li> <li class="nav-item"> <a class="nav-link" href="#sekcja4">Sekcja 4</a> </li> <li class="nav-item"> <a class="nav-link" href="#sekcja5">Sekcja 5</a> </li> <li class="nav-item"> <a class="nav-link" href="#sekcja6">Sekcja 6</a> </li> </ul> </div> </nav> <!-- sekcja 1: przycisk bootstrap --> <section id="sekcja1" class="container-fluid py-5 bg-primary"> <div class="container text-center"> <h1>Sekcja 1</h1> <button type="button" class="btn btn-light">Przycisk Bootstrap</button> </div> </section> <!-- sekcja 2: alert bootstrap --> <section id="sekcja2" class="container-fluid py-5 bg-secondary"> <div class="container text-center"> <h1>Sekcja 2</h1> <div class="alert alert-warning" role="alert"> To jest alert Bootstrap! </div> </div> </section> <!-- sekcja 3: pasek postępu bootstrap --> <section id="sekcja3" class="container-fluid py-5 bg-dark text-white"> <div class="container text-center"> <h1>Sekcja 3</h1> <div class="progress"> <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div> </div> </div> </section> <!-- sekcja 4: lista bootstrap --> <section id="sekcja4" class="container-fluid py-5 bg-info"> <div class="container text-center"> <h1>Sekcja 4</h1> <ul class="list-group"> <li class="list-group-item">Element 1</li> <li class="list-group-item">Element 2</li> <li class="list-group-item">Element 3</li> </ul> </div> </section> <!-- sekcja 5: karty bootstrap --> <section id="sekcja5" class="container-fluid py-5 bg-warning"> <div class="container text-center"> <h1>Sekcja 5</h1> <div class="card" style="width: 18rem;"> <img src="https://i.ytimg.com/vi/Ed4O5W-eUTs/hqdefault.jpg" class="card-img-top" alt="nima"> <div class="card-body"> <h5 class="card-title">Słoik</h5> <a href="#" class="btn btn-primary">Przejdź gdzieś</a> </div> </div> </div> </section> <!-- sekcja 6: formularz bootstrap --> <section id="sekcja6" class="container-fluid py-5 bg-success text-white"> <div class="container text-center"> <h1>Sekcja 6</h1> <form> <div class="form-group"> <label for="mail">Adres email</label> <input type="email" class="form-control" id="mail" aria-describedby="emailHelp"> </div> <div class="form-group"> <label for="haslo">Hasło</label> <input type="password" class="form-control" id="haslo"> </div> <button type="submit" class="btn btn-light">Wyślij</button> </form> </div> </section> <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script> <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> </body> </html>
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tytul</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- nawigacja bootstrap -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="#">Stronka</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#sekcja1">Sekcja 1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#sekcja2">Sekcja 2</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#sekcja3">Sekcja 3</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#sekcja4">Sekcja 4</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#sekcja5">Sekcja 5</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#sekcja6">Sekcja 6</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- sekcja 1: przycisk bootstrap -->
+    <section id="sekcja1" class="container-fluid py-5 bg-primary">
+        <div class="container text-center">
+            <h1>Sekcja 1</h1>
+            <button type="button" class="btn btn-light">Przycisk Bootstrap</button>
+        </div>
+    </section>
+    
+    <!-- sekcja 2: alert bootstrap -->
+    <section id="sekcja2" class="container-fluid py-5 bg-secondary">
+        <div class="container text-center">
+            <h1>Sekcja 2</h1>
+            <div class="alert alert-warning" role="alert">
+                To jest alert Bootstrap!
+            </div>
+        </div>
+    </section>
+    
+    <!-- sekcja 3: pasek postępu bootstrap -->
+    <section id="sekcja3" class="container-fluid py-5 bg-dark text-white">
+        <div class="container text-center">
+            <h1>Sekcja 3</h1>
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- sekcja 4: lista bootstrap -->
+    <section id="sekcja4" class="container-fluid py-5 bg-info">
+        <div class="container text-center">
+            <h1>Sekcja 4</h1>
+            <ul class="list-group">
+                <li class="list-group-item">Element 1</li>
+                <li class="list-group-item">Element 2</li>
+                <li class="list-group-item">Element 3</li>
+            </ul>
+        </div>
+    </section>
+    
+    <!-- sekcja 5: karty bootstrap -->
+    <section id="sekcja5" class="container-fluid py-5 bg-warning">
+        <div class="container text-center">
+            <h1>Sekcja 5</h1>
+            <div class="card" style="width: 18rem;">
+                <img src="https://i.ytimg.com/vi/Ed4O5W-eUTs/hqdefault.jpg" class="card-img-top" alt="nima">
+                <div class="card-body">
+                    <h5 class="card-title">Słoik</h5>
+                    <a href="#" class="btn btn-primary">Przejdź gdzieś</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- sekcja 6: formularz bootstrap -->
+    <section id="sekcja6" class="container-fluid py-5 bg-success text-white">
+        <div class="container text-center">
+            <h1>Sekcja 6</h1>
+            <form>
+                <div class="form-group">
+                    <label for="mail">Adres email</label>
+                    <input type="email" class="form-control" id="mail" aria-describedby="emailHelp">
+                </div>
+                <div class="form-group">
+                    <label for="haslo">Hasło</label>
+                    <input type="password" class="form-control" id="haslo">
+                </div>
+                <button type="submit" class="btn btn-light">Wyślij</button>
+            </form>
+        </div>
+    </section>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
